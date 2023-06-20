@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Lora-Regular';
     src: url(../fonts/Lora-Regular.woff2) format('woff2'),
-         url(../fonts/Lora-Regular.woff) format('woff');
+        url(../fonts/Lora-Regular.woff) format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -10,7 +10,15 @@
 @font-face {
     font-family: 'brown-sugar';
     src: url(../fonts/brown-sugar.woff2) format('woff2'),
-         url(../fonts/brown-sugar.woff) format('woff');
+        url(../fonts/brown-sugar.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter-Regular';
+    src: url(../fonts/Inter-Regular.woff2) format('woff2');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -46,6 +54,23 @@ ul {
     margin: 0;
 }
 
+.title {
+    margin: 0;
+    font-family: "brown-sugar", "font", sans-serif;
+    font-weight: 400;
+    color: $white1;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    width: max-content;
+    text-decoration: none;
+    color: $white1;
+    outline: none;
+}
 
 /* 567 */
 @media (min-width: 0px) {
@@ -58,11 +83,164 @@ ul {
             object-fit: cover;
         }
     }
+
+    /* MY SERVICES */
+
+    .services {
+        margin: 0 auto;
+        margin-bottom: 72px;
+        max-width: 600px;
+
+        & .title--h2 {
+            margin-bottom: 65px;
+            padding-right: 31px;
+            font-family: "brown-sugar", "font", sans-serif;
+            font-weight: 400;
+            font-size: 50px;
+            line-height: 50px;
+            text-align: right;
+            color: #ffffff;
+            background-image: url('../icon/services_line.svg');
+            background-repeat: no-repeat;
+            background-position: left 39px;
+        }
+
+        & .container--services {
+            margin: 0 44px;
+
+            & .services__list {
+
+                & .services__item {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 37px;
+                    padding: 21px 15px 22px;
+                    border: 1px solid #ffffff;
+
+                    & .services__text {
+                        max-width: 317px;
+                        font-family: "Inter-Regular", "font", sans-serif;
+                        font-size: 15px;
+                        line-height: 100%;
+                        font-weight: 300;
+                        align-self: center;
+                        color: #ffffff;
+                    }
+
+                    & .btn {
+                        padding: 12px 41px 12px 45px;
+                        border: none;
+                        outline: 1px solid #ffffff;
+                        font-family: "Inter-Regular", "font", sans-serif;
+                        font-size: 15px;
+                        line-height: 15px;
+                        font-weight: 300;
+                        color: #FFFFFF;
+                        background-color: transparent;
+                        cursor: pointer;
+                        transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, outline-color 0.3s ease-in-out;
+
+                        &:focus {
+                            outline: 2px solid rgb(253, 184, 57);
+                            outline-color: rgb(253, 184, 57);
+                        }
+
+                        &:hover {
+                            background-color: rgb(66, 66, 65);
+                            color: rgb(253, 184, 57);
+                            outline-color: rgb(253, 184, 57);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* FOOTER */
+
+    footer {
+        max-width: 600px;
+        margin: 0 auto;
+
+        & .container--footer {
+            margin: 0 20px;
+
+            & .title--contacts {
+                margin-bottom: 45px;
+                font-size: 60px;
+                line-height: 60px;
+                text-align: start;
+                background-image: none;
+            }
+
+            & .contact__list {
+                display: flex;
+                flex-wrap: wrap;
+
+                & .contact__item {
+                    position: relative;
+                    display: flex;
+                    justify-content: space-between;
+                    margin-right: 70px;
+                    margin-bottom: 24px;
+                    min-width: 235px;
+                    font-family: "Inter-Regular", "font", sans-serif;
+                    font-size: 30px;
+                    line-height: 30px;
+                    font-weight: 400;
+
+                    &:nth-child(2) {
+                        margin-right: 0;
+                    }
+
+                    & svg path:hover {
+                        fill: rgb(253, 184, 57);
+                    }
+
+                    & .contacts__link {
+                        position: relative;
+                        padding-bottom: 8px;
+                        border: none;
+                        outline: none;
+                        transition: color 0.3s ease-in-out;
+
+                        & svg {
+                            position: absolute;
+                            left: 0;
+                            bottom: 0;
+                        }
+
+                        & svg line {
+                            transition: stroke 0.3s ease-in-out;
+                        }
+
+
+                        &:hover {
+                            color: rgb(253, 184, 57);
+
+                        }
+
+                        & svg line:hover {
+                            stroke: rgb(253, 184, 57);
+                        }
+                    }
+                }
+            }
+
+
+
+
+        }
+
+    }
+
+
+
+
+
+
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) {}
 
-}
-
-@media (min-width: 1024px) {
-}
+@media (min-width: 1024px) {}
