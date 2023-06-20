@@ -1,0 +1,130 @@
+@font-face {
+  font-family: "Lora-Regular";
+  src: url(../fonts/Lora-Regular.woff2) format("woff2"), url(../fonts/Lora-Regular.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "brown-sugar";
+  src: url(../fonts/brown-sugar.woff2) format("woff2"), url(../fonts/brown-sugar.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  font-family: "Lora-Regular", "font", sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  min-width: 320px;
+  overflow-x: hidden;
+  background-color: #000000;
+}
+
+.container {
+  margin: 0 20px;
+}
+
+main {
+  margin: 0 auto;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* 567 */
+@media (min-width: 0px) {
+  .picture {
+    display: inline-block;
+  }
+  .picture img {
+    max-width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .first {
+    position: relative;
+  }
+  .first__block img {
+    width: 100%;
+    height: 100%;
+  }
+  .first__content-block {
+    position: absolute;
+    top: 26px;
+    left: 0;
+    width: 100%;
+  }
+  .first__content {
+    font-size: 12px;
+    line-height: 15px;
+    display: block;
+    text-align: center;
+  }
+  .about {
+    margin-top: -75px;
+  }
+  .about__content {
+    color: #F5F5F5;
+    width: calc(50% - 7px);
+  }
+  .about__greeting {
+    display: block;
+  }
+  .about__greeting:first-child {
+    margin-bottom: 72px;
+    margin-top: 42px;
+  }
+  .about__greeting:last-child {
+    text-align: right;
+  }
+  .about__portfolio {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 102px;
+    flex-wrap: wrap;
+  }
+  .about__width {
+    width: calc(50% - 28px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .about__width img {
+    width: 100%;
+  }
+  .about__block {
+    border: 1px solid #F5F5F5;
+    width: 193px;
+    border-radius: 50%;
+    height: 193px;
+    position: relative;
+  }
+  .about__content1 {
+    color: #F5F5F5;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .title {
+    margin: 0;
+  }
+  .title--h1 {
+    font-family: "brown-sugar", "font", sans-serif;
+    font-size: 80px;
+    line-height: 80px;
+    text-align: right;
+    position: relative;
+    color: #000000;
+  }
+  .title--h1 span {
+    position: absolute;
+    left: -2px;
+    top: 96%;
+    color: #F5F5F5;
+  }
+}/*# sourceMappingURL=style.css.map */
