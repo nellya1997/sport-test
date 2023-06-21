@@ -72,6 +72,65 @@ a {
     -o-object-fit: cover;
        object-fit: cover;
   }
+  .first {
+    position: relative;
+  }
+  .first__block img {
+    width: 100%;
+    height: 100%;
+  }
+  .first__content-block {
+    position: absolute;
+    top: 26px;
+    left: 0;
+    width: 100%;
+  }
+  .first__content {
+    font-size: 12px;
+    line-height: 15px;
+    display: block;
+    text-align: center;
+  }
+  .about {
+    margin-top: -67px;
+  }
+  .about .title {
+    margin: 0;
+  }
+  .about .title--h1 {
+    font-family: "brown-sugar", "font", sans-serif;
+    font-size: 70px;
+    line-height: 70px;
+    text-align: right;
+    position: relative;
+    color: #000000;
+  }
+  .about .title--h1 span {
+    position: absolute;
+    left: -2px;
+    top: 96%;
+    color: #F5F5F5;
+  }
+  .about__content {
+    color: #F5F5F5;
+    width: calc(50% - 7px);
+  }
+  .about__greeting {
+    display: block;
+  }
+  .about__greeting:first-child {
+    margin-bottom: 72px;
+    margin-top: 42px;
+  }
+  .about__greeting:last-child {
+    text-align: right;
+  }
+  .about__portfolio {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 102px;
+    flex-wrap: wrap;
+  }
   /* MY SERVICES */
   .services {
     margin: 0 auto;
@@ -128,7 +187,7 @@ a {
     outline-color: rgb(253, 184, 57);
   }
   .services .container--services .services__list .services__item .btn:hover {
-    background-color: rgb(66, 66, 65);
+    background-color: rgba(66, 66, 65, 0.6);
     color: rgb(253, 184, 57);
     outline-color: rgb(253, 184, 57);
   }
@@ -153,8 +212,6 @@ a {
   }
   footer .container--footer .contact__list .contact__item {
     position: relative;
-    display: flex;
-    justify-content: space-between;
     margin-right: 70px;
     margin-bottom: 24px;
     min-width: 235px;
@@ -170,24 +227,58 @@ a {
     fill: rgb(253, 184, 57);
   }
   footer .container--footer .contact__list .contact__item .contacts__link {
-    position: relative;
-    padding-bottom: 8px;
-    border: none;
-    outline: none;
-    transition: color 0.3s ease-in-out;
+    display: flex;
+    justify-content: space-between;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
   }
-  footer .container--footer .contact__list .contact__item .contacts__link svg {
-    position: absolute;
-    left: 0;
-    bottom: 0;
+  footer .container--footer .contact__list .contact__item .contacts__link span {
+    margin-right: 5%;
   }
-  footer .container--footer .contact__list .contact__item .contacts__link svg line {
-    transition: stroke 0.3s ease-in-out;
+  footer .container--footer .contact__list .contact__item .contacts__link:focus {
+    background-color: rgba(66, 66, 65, 0.6);
   }
   footer .container--footer .contact__list .contact__item .contacts__link:hover {
     color: rgb(253, 184, 57);
   }
+  footer .container--footer .contact__list .contact__item .contacts__link::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: -7px;
+    left: 0;
+    border-bottom: 1px solid #fff;
+    transition: border-color 0.3s ease-in-out;
+  }
+  footer .container--footer .contact__list .contact__item .contacts__link:hover::before {
+    border-bottom: 1px solid rgb(253, 184, 57);
+  }
+  footer .container--footer .contact__list .contact__item .contacts__link svg line {
+    transition: stroke 0.3s ease-in-out;
+  }
   footer .container--footer .contact__list .contact__item .contacts__link svg line:hover {
     stroke: rgb(253, 184, 57);
+  }
+}
+@media (min-width: 768px) {
+  .about {
+    margin-top: -75px;
+  }
+  .about .title {
+    margin: 0;
+  }
+  .about .title--h1 {
+    font-family: "brown-sugar", "font", sans-serif;
+    font-size: 80px;
+    line-height: 80px;
+    text-align: right;
+    position: relative;
+    color: #000000;
+  }
+  .about .title--h1 span {
+    position: absolute;
+    left: -2px;
+    top: 96%;
+    color: #F5F5F5;
   }
 }/*# sourceMappingURL=style.css.map */
