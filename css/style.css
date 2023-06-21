@@ -12,6 +12,13 @@
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: "Inter-Regular";
+  src: url(../fonts/Inter-Regular.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 body {
   font-family: "Lora-Regular", "font", sans-serif;
   font-weight: normal;
@@ -33,6 +40,26 @@ ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
+}
+
+.title {
+  margin: 0;
+  font-family: "brown-sugar", "font", sans-serif;
+  font-weight: 400;
+  color: #F5F5F5;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  text-decoration: none;
+  color: #F5F5F5;
+  outline: none;
 }
 
 /* 567 */
@@ -65,7 +92,24 @@ ul {
     text-align: center;
   }
   .about {
-    margin-top: -75px;
+    margin-top: -67px;
+  }
+  .about .title {
+    margin: 0;
+  }
+  .about .title--h1 {
+    font-family: "brown-sugar", "font", sans-serif;
+    font-size: 70px;
+    line-height: 70px;
+    text-align: right;
+    position: relative;
+    color: #000000;
+  }
+  .about .title--h1 span {
+    position: absolute;
+    left: -2px;
+    top: 96%;
+    color: #F5F5F5;
   }
   .about__content {
     color: #F5F5F5;
@@ -87,33 +131,143 @@ ul {
     margin-top: 102px;
     flex-wrap: wrap;
   }
-  .about__width {
-    width: calc(50% - 28px);
+  /* MY SERVICES */
+  .services {
+    margin: 0 auto;
+    margin-bottom: 72px;
+    max-width: 600px;
+  }
+  .services .title--h2 {
+    margin-bottom: 65px;
+    padding-right: 31px;
+    font-family: "brown-sugar", "font", sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 50px;
+    text-align: right;
+    color: #ffffff;
+    background-image: url("../icon/services_line.svg");
+    background-repeat: no-repeat;
+    background-position: left 39px;
+  }
+  .services .container--services {
+    margin: 0 44px;
+  }
+  .services .container--services .services__list .services__item {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 37px;
+    padding: 21px 15px 22px;
+    border: 1px solid #ffffff;
   }
-  .about__width img {
-    width: 100%;
+  .services .container--services .services__list .services__item .services__text {
+    max-width: 317px;
+    font-family: "Inter-Regular", "font", sans-serif;
+    font-size: 15px;
+    line-height: 100%;
+    font-weight: 300;
+    align-self: center;
+    color: #ffffff;
   }
-  .about__block {
-    border: 1px solid #F5F5F5;
-    width: 193px;
-    border-radius: 50%;
-    height: 193px;
+  .services .container--services .services__list .services__item .btn {
+    padding: 12px 41px 12px 45px;
+    border: none;
+    outline: 1px solid #ffffff;
+    font-family: "Inter-Regular", "font", sans-serif;
+    font-size: 15px;
+    line-height: 15px;
+    font-weight: 300;
+    color: #FFFFFF;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, outline-color 0.3s ease-in-out;
+  }
+  .services .container--services .services__list .services__item .btn:focus {
+    outline: 2px solid rgb(253, 184, 57);
+    outline-color: rgb(253, 184, 57);
+  }
+  .services .container--services .services__list .services__item .btn:hover {
+    background-color: rgba(66, 66, 65, 0.6);
+    color: rgb(253, 184, 57);
+    outline-color: rgb(253, 184, 57);
+  }
+  /* FOOTER */
+  footer {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  footer .container--footer {
+    margin: 0 20px;
+  }
+  footer .container--footer .title--contacts {
+    margin-bottom: 45px;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: start;
+    background-image: none;
+  }
+  footer .container--footer .contact__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  footer .container--footer .contact__list .contact__item {
     position: relative;
+    margin-right: 70px;
+    margin-bottom: 24px;
+    min-width: 235px;
+    font-family: "Inter-Regular", "font", sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 400;
   }
-  .about__content1 {
-    color: #F5F5F5;
+  footer .container--footer .contact__list .contact__item:nth-child(2) {
+    margin-right: 0;
+  }
+  footer .container--footer .contact__list .contact__item svg path:hover {
+    fill: rgb(253, 184, 57);
+  }
+  footer .container--footer .contact__list .contact__item .contacts__link {
+    display: flex;
+    justify-content: space-between;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  }
+  footer .container--footer .contact__list .contact__item .contacts__link span {
+    margin-right: 5%;
+  }
+  footer .container--footer .contact__list .contact__item .contacts__link:focus {
+    background-color: rgba(66, 66, 65, 0.6);
+  }
+  footer .container--footer .contact__list .contact__item .contacts__link:hover {
+    color: rgb(253, 184, 57);
+  }
+  footer .container--footer .contact__list .contact__item .contacts__link::before {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: -7px;
+    left: 0;
+    border-bottom: 1px solid #fff;
+    transition: border-color 0.3s ease-in-out;
   }
-  .title {
+  footer .container--footer .contact__list .contact__item .contacts__link:hover::before {
+    border-bottom: 1px solid rgb(253, 184, 57);
+  }
+  footer .container--footer .contact__list .contact__item .contacts__link svg line {
+    transition: stroke 0.3s ease-in-out;
+  }
+  footer .container--footer .contact__list .contact__item .contacts__link svg line:hover {
+    stroke: rgb(253, 184, 57);
+  }
+}
+@media (min-width: 768px) {
+  .about {
+    margin-top: -75px;
+  }
+  .about .title {
     margin: 0;
   }
-  .title--h1 {
+  .about .title--h1 {
     font-family: "brown-sugar", "font", sans-serif;
     font-size: 80px;
     line-height: 80px;
@@ -121,7 +275,7 @@ ul {
     position: relative;
     color: #000000;
   }
-  .title--h1 span {
+  .about .title--h1 span {
     position: absolute;
     left: -2px;
     top: 96%;

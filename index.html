@@ -1,62 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fitness</title>
-    <link rel="stylesheet" href="css/normalize.css" />
 
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <!-- <div class="container"> -->
-      <header></header>
-      <main>
-        <section class="first">
-          <div class="first__block">
-            <img src="/img/first/content1.jpg">
-            <div class="first__content-block">
-              <span class="first__content">Фитнес тренер,<br> который поможет полюбить себя и&nbsp;добиться идеальной фигуры.<br> Без вреда для здоровья</span>
-            </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fitness</title>
+  <link rel="stylesheet" href="css/normalize.css" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <!-- <div class="container"> -->
+  <!-- </div> -->
+  <header></header>
+  <main>
+    <section class="first">
+      <div class="first__block">
+        <img src="/img/first/content1.jpg">
+        <div class="first__content-block">
+          <span class="first__content">Фитнес тренер,<br> который поможет полюбить себя и&nbsp;добиться идеальной
+            фигуры.<br> Без вреда для здоровья</span>
         </div>
+      </div>
 
-        </section>
+    </section>
 
-        <section class="about">
-          <div class="container">
-            <h1 class="title title--h1">MILANA
-              <span>SOKOLOVA</span>
-            </h1>
+    <section class="about">
+      <div class="container">
+        <h1 class="title title--h1">MILANA
+          <span>SOKOLOVA</span>
+        </h1>
 
-            <div class="about__portfolio">
-              <div class="about__content">
-                <span class="about__greeting">Привет!<br> Меня зовут Валерия!</span>
-                <span class="about__greeting">Я индивидуальный<br> фитнес тренер, который<br> поможет тебе создать<br> тело мечты</span>
-              </div>
-              <div class="about__width">
-                <img src="img/content2.jpg">
-              </div>
+        <div class="about__portfolio">
+          <div class="about__content">
+            <span class="about__greeting">Привет!<br> Меня зовут Валерия!</span>
+            <span class="about__greeting">Я индивидуальный<br> фитнес тренер, который<br> поможет тебе создать<br> тело
+              мечты</span>
+          </div>
+          <div class="about__width">
+            <img src="img/content2.jpg">
+          </div>
 
-              <div class="about__width">
-                <img src="img/content3.jpg">
-              </div>
-              <div class="about__width">
-                <div class="about__block">
-                  <span class="about__content1">ПОРТФОЛИО</span>
-                </div>
-              </div>
+          <div class="about__width">
+            <img src="img/content3.jpg">
+          </div>
+          <div class="about__width">
+            <div class="about__block">
+              <span class="about__content1">ПОРТФОЛИО</span>
             </div>
           </div>
-        </section>
+        </div>
+      </div>
+    </section>
 
-        <section class="SERVICES">
-          <h2>MY SERVICES</h2>
-        </section>
-      </main>
-      <footer></footer>
-    <!-- </div> -->
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="main.js"></script>
+    <section class="services">
+      <h2 class="title title--h2">MY SERVICES</h2>
+      <div class="container container--services">
+        <ul class="services__list">
+          <li class="services__item">
+            <p class="services__text">Консультация (45 минут)</p>
+            <button class="btn">написать</button>
+          </li>
+          <li class="services__item">
+            <p class="services__text">Составление индивидуальных тренировок</p>
+            <button class="btn">написать</button>
+          </li>
+          <li class="services__item">
+            <p class="services__text">Составление индивидуального плана питания</p>
+            <button class="btn">написать</button>
+          </li>
+          <li class="services__item">
+            <p class="services__text">PREMIUM тариф - антицеллюлитный массаж</p>
+            <button class="btn">написать</button>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container container--footer">
+      <h2 class="title title--h2 title--contacts">CONTACTS</h2>
+      <ul class="contact__list">
+        <li class="contact__item">
+          <a class="contacts__link" href="http://">
+            <span>TELEGRAM</span>
+            <svg width="25" height="22" viewBox="0 0 25 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path opacity="0.5"
+                d="M24.4816 4.23394C24.6109 3.41565 24.0522 2.64756 23.2339 2.51835L9.89915 0.412859C9.08086 0.283655 8.31276 0.842269 8.18356 1.66056C8.05435 2.47885 8.61297 3.24694 9.43126 3.37615L21.2844 5.2477L19.4129 17.1009C19.2837 17.9191 19.8423 18.6872 20.6606 18.8164C21.4789 18.9456 22.2469 18.387 22.3762 17.5687L24.4816 4.23394ZM1.88226 21.2131L23.8823 5.2131L22.1177 2.78689L0.117742 18.7869L1.88226 21.2131Z"
+                fill="white" />
+            </svg>
+          </a>
+        </li>
+        <li class="contact__item">
+          <a class="contacts__link" href="http://">
+            <span>INSTAGRAM</span>
+            <svg width="25" height="22" viewBox="0 0 25 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path opacity="0.5"
+                d="M24.4816 4.23394C24.6109 3.41565 24.0522 2.64756 23.2339 2.51835L9.89915 0.412859C9.08086 0.283655 8.31276 0.842269 8.18356 1.66056C8.05435 2.47885 8.61297 3.24694 9.43126 3.37615L21.2844 5.2477L19.4129 17.1009C19.2837 17.9191 19.8423 18.6872 20.6606 18.8164C21.4789 18.9456 22.2469 18.387 22.3762 17.5687L24.4816 4.23394ZM1.88226 21.2131L23.8823 5.2131L22.1177 2.78689L0.117742 18.7869L1.88226 21.2131Z"
+                fill="white" />
+            </svg>
+          </a>
+        </li>
+        <li class="contact__item">
+          <a class="contacts__link" href="http://">
+            <span>WHATSAPP</span>
+            <svg width="25" height="22" viewBox="0 0 25 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path opacity="0.5"
+                d="M24.4816 4.23394C24.6109 3.41565 24.0522 2.64756 23.2339 2.51835L9.89915 0.412859C9.08086 0.283655 8.31276 0.842269 8.18356 1.66056C8.05435 2.47885 8.61297 3.24694 9.43126 3.37615L21.2844 5.2477L19.4129 17.1009C19.2837 17.9191 19.8423 18.6872 20.6606 18.8164C21.4789 18.9456 22.2469 18.387 22.3762 17.5687L24.4816 4.23394ZM1.88226 21.2131L23.8823 5.2131L22.1177 2.78689L0.117742 18.7869L1.88226 21.2131Z"
+                fill="white" />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="main.js"></script>
 </body>
+
 </html>
