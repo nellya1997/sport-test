@@ -133,9 +133,14 @@ a {
   }
   /* MY SERVICES */
   .services {
+    position: relative;
     margin: 0 auto;
     margin-bottom: 72px;
     max-width: 600px;
+  }
+  .services svg {
+    position: absolute;
+    top: 42px;
   }
   .services .title--h2 {
     margin-bottom: 65px;
@@ -146,9 +151,6 @@ a {
     line-height: 50px;
     text-align: right;
     color: #ffffff;
-    background-image: url("../icon/services_line.svg");
-    background-repeat: no-repeat;
-    background-position: left 39px;
   }
   .services .container--services {
     margin: 0 44px;
@@ -183,11 +185,9 @@ a {
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, outline-color 0.3s ease-in-out;
   }
   .services .container--services .services__list .services__item .btn:focus {
-    outline: 2px solid rgb(253, 184, 57);
-    outline-color: rgb(253, 184, 57);
+    background-color: rgba(66, 66, 65, 0.6);
   }
   .services .container--services .services__list .services__item .btn:hover {
-    background-color: rgba(66, 66, 65, 0.6);
     color: rgb(253, 184, 57);
     outline-color: rgb(253, 184, 57);
   }
@@ -229,10 +229,8 @@ a {
   footer .container--footer .contact__list .contact__item .contacts__link {
     display: flex;
     justify-content: space-between;
+    width: 100%;
     transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
-  }
-  footer .container--footer .contact__list .contact__item .contacts__link span {
-    margin-right: 5%;
   }
   footer .container--footer .contact__list .contact__item .contacts__link:focus {
     background-color: rgba(66, 66, 65, 0.6);
@@ -253,11 +251,15 @@ a {
   footer .container--footer .contact__list .contact__item .contacts__link:hover::before {
     border-bottom: 1px solid rgb(253, 184, 57);
   }
-  footer .container--footer .contact__list .contact__item .contacts__link svg line {
-    transition: stroke 0.3s ease-in-out;
+  footer .container--footer .contact__list .contact__item .contacts__link svg {
+    align-self: center;
   }
-  footer .container--footer .contact__list .contact__item .contacts__link svg line:hover {
-    stroke: rgb(253, 184, 57);
+  footer .container--footer .contact__list .contact__item .contacts__link svg path {
+    transition: fill 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  }
+  footer .container--footer .contact__list .contact__item .contacts__link:hover svg path {
+    opacity: 0.8;
+    fill: rgb(253, 184, 57);
   }
 }
 @media (min-width: 768px) {
