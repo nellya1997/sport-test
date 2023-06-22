@@ -108,28 +108,36 @@ a {
         }
     }
 
-    .about {
-        margin-top: -67px;
+    .title {
+        margin: 0;
 
-        & .title {
-            margin: 0;
+        &--h1 {
+            font-family: 'brown-sugar', 'font', sans-serif;
+            font-size: 70px;
+            line-height: 70px;
+            text-align: right;
+            position: relative;
+            color: $black;
 
-            &--h1 {
-                font-family: 'brown-sugar', 'font', sans-serif;
-                font-size: 70px;
-                line-height: 70px;
-                text-align: right;
-                position: relative;
-                color: $black;
-
-                & span {
-                    position: absolute;
-                    left: -2px;
-                    top: 96%;
-                    color: $white1;
-                }
+            & span {
+                position: absolute;
+                left: -2px;
+                top: 96%;
+                color: $white1;
             }
         }
+
+        &--contacts {
+            margin-bottom: 45px;
+            font-size: 60px;
+            line-height: 60px;
+            text-align: start;
+            background-image: none;
+        }
+    }
+
+    .about {
+        margin-top: -67px;
 
         &__content {
             color: $white1;
@@ -154,6 +162,32 @@ a {
             justify-content: space-between;
             margin-top: 102px;
             flex-wrap: wrap;
+        }
+
+        &__width {
+            width: calc(50% - 7px);
+            display: flex;
+            align-items: center;
+
+            & img {
+                width: 100%;
+            }
+        }
+
+        &__block {
+            border: 1px solid $white1;
+            width: 193px;
+            border-radius: 50%;
+            height: 193px;
+            position: relative;
+        }
+
+        &__content1 {
+            color: $white1;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
     }
 
@@ -232,20 +266,9 @@ a {
 
     /* FOOTER */
 
-    footer {
+    .footer {
         max-width: 600px;
         margin: 0 auto;
-
-        & .container--footer {
-            margin: 0 20px;
-
-            & .title--contacts {
-                margin-bottom: 45px;
-                font-size: 60px;
-                line-height: 60px;
-                text-align: start;
-                background-image: none;
-            }
 
             & .contact__list {
                 display: flex;
@@ -315,7 +338,7 @@ a {
             }
         }
     }
-}
+
 
 @media (min-width: 320px) {
 

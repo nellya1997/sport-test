@@ -54,7 +54,6 @@ p {
 }
 
 a {
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   text-decoration: none;
@@ -91,13 +90,10 @@ a {
     display: block;
     text-align: center;
   }
-  .about {
-    margin-top: -67px;
-  }
-  .about .title {
+  .title {
     margin: 0;
   }
-  .about .title--h1 {
+  .title--h1 {
     font-family: "brown-sugar", "font", sans-serif;
     font-size: 70px;
     line-height: 70px;
@@ -105,11 +101,21 @@ a {
     position: relative;
     color: #000000;
   }
-  .about .title--h1 span {
+  .title--h1 span {
     position: absolute;
     left: -2px;
     top: 96%;
     color: #F5F5F5;
+  }
+  .title--contacts {
+    margin-bottom: 45px;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: start;
+    background-image: none;
+  }
+  .about {
+    margin-top: -67px;
   }
   .about__content {
     color: #F5F5F5;
@@ -130,6 +136,28 @@ a {
     justify-content: space-between;
     margin-top: 102px;
     flex-wrap: wrap;
+  }
+  .about__width {
+    width: calc(50% - 7px);
+    display: flex;
+    align-items: center;
+  }
+  .about__width img {
+    width: 100%;
+  }
+  .about__block {
+    border: 1px solid #F5F5F5;
+    width: 193px;
+    border-radius: 50%;
+    height: 193px;
+    position: relative;
+  }
+  .about__content1 {
+    color: #F5F5F5;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   /* MY SERVICES */
   .services {
@@ -192,25 +220,15 @@ a {
     outline-color: rgb(253, 184, 57);
   }
   /* FOOTER */
-  footer {
+  .footer {
     max-width: 600px;
     margin: 0 auto;
   }
-  footer .container--footer {
-    margin: 0 20px;
-  }
-  footer .container--footer .title--contacts {
-    margin-bottom: 45px;
-    font-size: 60px;
-    line-height: 60px;
-    text-align: start;
-    background-image: none;
-  }
-  footer .container--footer .contact__list {
+  .footer .contact__list {
     display: flex;
     flex-wrap: wrap;
   }
-  footer .container--footer .contact__list .contact__item {
+  .footer .contact__list .contact__item {
     position: relative;
     margin-right: 70px;
     margin-bottom: 24px;
@@ -220,25 +238,25 @@ a {
     line-height: 30px;
     font-weight: 400;
   }
-  footer .container--footer .contact__list .contact__item:nth-child(2) {
+  .footer .contact__list .contact__item:nth-child(2) {
     margin-right: 0;
   }
-  footer .container--footer .contact__list .contact__item svg path:hover {
+  .footer .contact__list .contact__item svg path:hover {
     fill: rgb(253, 184, 57);
   }
-  footer .container--footer .contact__list .contact__item .contacts__link {
+  .footer .contact__list .contact__item .contacts__link {
     display: flex;
     justify-content: space-between;
     width: 100%;
     transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
   }
-  footer .container--footer .contact__list .contact__item .contacts__link:focus {
+  .footer .contact__list .contact__item .contacts__link:focus {
     background-color: rgba(66, 66, 65, 0.6);
   }
-  footer .container--footer .contact__list .contact__item .contacts__link:hover {
+  .footer .contact__list .contact__item .contacts__link:hover {
     color: rgb(253, 184, 57);
   }
-  footer .container--footer .contact__list .contact__item .contacts__link::before {
+  .footer .contact__list .contact__item .contacts__link::before {
     position: absolute;
     content: "";
     top: 0;
@@ -248,16 +266,16 @@ a {
     border-bottom: 1px solid #fff;
     transition: border-color 0.3s ease-in-out;
   }
-  footer .container--footer .contact__list .contact__item .contacts__link:hover::before {
+  .footer .contact__list .contact__item .contacts__link:hover::before {
     border-bottom: 1px solid rgb(253, 184, 57);
   }
-  footer .container--footer .contact__list .contact__item .contacts__link svg {
+  .footer .contact__list .contact__item .contacts__link svg {
     align-self: center;
   }
-  footer .container--footer .contact__list .contact__item .contacts__link svg path {
+  .footer .contact__list .contact__item .contacts__link svg path {
     transition: fill 0.3s ease-in-out, opacity 0.3s ease-in-out;
   }
-  footer .container--footer .contact__list .contact__item .contacts__link:hover svg path {
+  .footer .contact__list .contact__item .contacts__link:hover svg path {
     opacity: 0.8;
     fill: rgb(253, 184, 57);
   }
