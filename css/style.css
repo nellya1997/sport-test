@@ -302,3 +302,15 @@ a {
     color: #F5F5F5;
   }
 }/*# sourceMappingURL=style.css.map */
+@media (max-width: 400px) {
+  .services .container--services {
+   margin: 0 20px;
+ }
+}
+@media (max-width: 350px) {
+  .services .container--services {
+   margin: 0 5px;
+   left: 20px;
+   position: relative;
+ }
+}
