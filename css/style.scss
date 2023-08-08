@@ -52,6 +52,16 @@ ul {
 	margin: 0;
 }
 
+.about__width, .about__content{
+	max-height: 100vh;
+
+	img{
+		max-height: 100vh;
+		object-fit: cover;
+		
+	}
+}
+
 .title {
 	margin: 0;
 	font-family: 'brown-sugar', 'font', sans-serif;
